@@ -2,11 +2,11 @@ FROM node
 
 WORKDIR /home/node/app
 
-COPY package*.json /home/node/app
+COPY package*.json ./
 
 RUN npm install
 
-COPY *.js /home/node/app
+COPY *.js ./
 
 ENV NODE_ENV=production
 
